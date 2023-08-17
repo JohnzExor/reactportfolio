@@ -1,5 +1,3 @@
-import Home from "./Home";
-
 interface Props {
   home: () => void;
   about: () => void;
