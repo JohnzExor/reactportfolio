@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link:hover {
+    font-weight: bold;
+    border-bottom: solid;
+    transition: 0.2s;
+}
+
+.home {
+    height: 60.1em;
+
+}
+.home-container {
+    padding: 23em 0 0 15em;
+
+}
+
+.user-name {
+    font-size: 100px;
+}
+
+.description {
+    font-size: 20px;
+}
+
+.home-profile {
+    height: 30em;
+    margin-top: -8em;
+    border-radius: 100em;
+    border: cyan solid;
+}
