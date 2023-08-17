@@ -1,4 +1,9 @@
-const NavBar = () => {
+interface Props {
+  about: () => void;
+  contact: () => void;
+}
+
+const NavBar = ({ about, contact }: Props) => {
   return (
     <div className="bg-black text-white shadow-lg fixed w-full">
       <div className="flex gap-4 justify-center p-4">
@@ -10,12 +15,12 @@ const NavBar = () => {
             </a>
           </li>
           <li>
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#" onClick={about}>
               About
             </a>
           </li>
           <li>
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#" onClick={contact}>
               Contact
             </a>
           </li>
