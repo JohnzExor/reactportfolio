@@ -1,9 +1,9 @@
 const NavBar = () => {
   return (
-    <div className=" dark:bg-cyan-950 text-white w-full fixed">
-      <div className="flex gap-3 justify-center p-4">
+    <div className="bg-black text-white shadow-lg">
+      <div className="flex gap-4 justify-center p-4">
         <strong>PORTFOLIO</strong>
-        <ul className="gap-3 flex">
+        <ul className="flex gap-4">
           <li>
             <a className="nav-link" href="#">
               Home

@@ -2,32 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body {
+    background-color: #131414;
+}
+
 .nav-link:hover {
     font-weight: bold;
-    border-bottom: solid;
+    border-bottom: solid white;
     transition: 0.2s;
 }
 
-.home {
-    height: 60.1em;
-
+.home-profile {
+    border-radius: 100em;
+    border: solid #151f38 0.3em;
+    height: 20em;
+    margin: auto;
 }
-.home-container {
-    padding: 23em 0 0 15em;
 
+.home-container {
+    margin-top: 10em;
+    text-align: center;
 }
 
 .user-name {
-    font-size: 100px;
-}
-
-.description {
-    font-size: 20px;
-}
-
-.home-profile {
-    height: 30em;
-    margin-top: -8em;
-    border-radius: 100em;
-    border: cyan solid;
+    font-size: 35px;
 }
