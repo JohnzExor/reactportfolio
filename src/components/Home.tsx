@@ -2,7 +2,7 @@ import profile from "../assets/images/profile.jpg";
 
 const Home = () => {
   return (
-    <div className="home text-white w-full">
+    <div className="home w-full dark:bg-zinc-900 dark:text-white">
       <div className="home-container">
         <img className="home-profile" src={profile} />
 

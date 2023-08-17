@@ -1,27 +1,36 @@
+import Home from "./Home";
+
 interface Props {
+  home: () => void;
   about: () => void;
   contact: () => void;
+  darkMode: () => void;
 }
 
-const NavBar = ({ about, contact }: Props) => {
+const NavBar = ({ home, about, contact, darkMode }: Props) => {
   return (
-    <div className="bg-black text-white shadow-lg fixed w-full">
+    <div className="shadow-lg fixed w-full dark:text-white">
       <div className="flex gap-4 justify-center p-4">
         <strong>PORTFOLIO</strong>
         <ul className="flex gap-4">
           <li>
-            <a className="nav-link" href="#">
+            <a className="nav-link" onClick={home}>
               Home
             </a>
           </li>
           <li>
-            <a className="nav-link" href="#" onClick={about}>
+            <a className="nav-link" onClick={about}>
               About
             </a>
           </li>
           <li>
-            <a className="nav-link" href="#" onClick={contact}>
+            <a className="nav-link" onClick={contact}>
               Contact
+            </a>
+          </li>
+          <li>
+            <a className="nav-link" onClick={darkMode}>
+              Darkmode/LightMode
             </a>
           </li>
         </ul>

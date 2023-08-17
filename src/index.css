@@ -4,7 +4,10 @@
 
 
 body {
-    background-color: #131414;
+}
+
+.nav-link {
+    cursor: pointer;
 }
 
 .nav-link:hover {
@@ -34,8 +37,7 @@ body {
 }
 
 .panel {
-    color: white;
-    background-color: black;
+    background-color: blanchedalmond;
     position: fixed;
     width: auto;
     top: 18%;
@@ -66,7 +68,6 @@ body {
 
 .panel textarea {
     border-radius: 0.5em;
-    color: black;
     width: 20em;
     height: 20em;
     padding: 1em;
@@ -74,7 +75,6 @@ body {
 
 .submit-btn {
     background-color: white;
-    color: black;
     border: solid white 1px;
     border-radius: 0.5em;
     width: 10em;

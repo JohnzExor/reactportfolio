@@ -5,16 +5,20 @@ import NavBar from "./components/NavBar";
 import Contact from "./components/Contact";
 
 const App = () => {
-  let [aboutVisibility, showAboutVisibility] = useState(false);
-  let toggleAbout = () => showAboutVisibility(!aboutVisibility);
-
-  let [contactVisibility, showContactVisibility] = useState(false);
-  let toggleContact = () => showContactVisibility(!contactVisibility);
+  const [panel, setPanel] = useState("");
+  const [darkMode, setDarkMode] = useState(false);
+  const toggleDarkMode = () => setDarkMode(!darkMode);
+  console.log(darkMode);
   return (
-    <div>
-      <NavBar about={toggleAbout} contact={toggleContact} />
-      {aboutVisibility && <About onClick={toggleAbout} />}
-      {contactVisibility && <Contact onClick={toggleContact} />}
+    <div className={darkMode ? "dark" : ""}>
+      <NavBar
+        about={() => setPanel("about")}
+        contact={() => setPanel("contact")}
+        home={() => setPanel("")}
+        darkMode={toggleDarkMode}
+      />
+      {panel === "about" && <About onClick={() => setPanel("")} />}
+      {panel === "contact" && <Contact onClick={() => setPanel("")} />}
       <Home />
     </div>
   );
