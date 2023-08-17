@@ -13,6 +13,10 @@ body {
     transition: 0.2s;
 }
 
+.home {
+    height: 60.1em;
+}
+
 .home-profile {
     border-radius: 100em;
     border: solid #151f38 0.3em;
