@@ -4,7 +4,7 @@ interface Props {
 
 const Contact = ({ onClick }: Props) => {
   return (
-    <div className="panel">
+    <div className="panel bg-gray-300 dark:bg-zinc-800 dark:text-white shadow-xl">
       <div className="panel-container">
         <div className="flex">
           <h1>Contact</h1>
@@ -13,10 +13,11 @@ const Contact = ({ onClick }: Props) => {
         <form action="" method="post" className=" text-center">
           <label htmlFor="">Name</label>
           <br />
-          <input type="text" name="" id="" /> <br />
+          <input className=" dark:bg-zinc-700" type="text" name="" id="" />{" "}
+          <br />
           <label htmlFor="">Message</label>
           <br />
-          <textarea name="" id=""></textarea>
+          <textarea className="dark:bg-zinc-700" name="" id=""></textarea>
           <br />
           <button className="submit-btn" type="submit">
             Submit

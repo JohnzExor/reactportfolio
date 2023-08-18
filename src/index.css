@@ -37,7 +37,6 @@ body {
 }
 
 .panel {
-    background-color: blanchedalmond;
     position: fixed;
     width: auto;
     top: 18%;
@@ -62,7 +61,6 @@ body {
 
 .panel input {
     border-radius: 0.5em;
-    color: black;
     width: 15em;
 }
 
@@ -74,7 +72,6 @@ body {
 }
 
 .submit-btn {
-    background-color: white;
     border: solid white 1px;
     border-radius: 0.5em;
     width: 10em;

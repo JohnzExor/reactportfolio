@@ -7,7 +7,7 @@ interface Props {
 
 const NavBar = ({ home, about, contact, darkMode }: Props) => {
   return (
-    <div className="shadow-lg fixed w-full dark:text-white">
+    <div className="shadow-xl fixed w-full bg-gray-300 dark:bg-zinc-800 dark:text-white">
       <div className="flex gap-4 justify-center p-4">
         <strong>PORTFOLIO</strong>
         <ul className="flex gap-4">

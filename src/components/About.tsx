@@ -4,7 +4,7 @@ interface Props {
 
 const About = ({ onClick }: Props) => {
   return (
-    <div className="panel">
+    <div className="panel bg-gray-300 dark:bg-zinc-800 dark:text-white shadow-xl">
       <div className="panel-container">
         <div className="flex gap-14">
           <h1>About me</h1>
