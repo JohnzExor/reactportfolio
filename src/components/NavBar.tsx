@@ -28,7 +28,7 @@ const NavBar = ({ home, about, contact, darkMode }: Props) => {
           </li>
           <li>
             <a className="nav-link" onClick={darkMode}>
-              Darkmode/LightMode
+              D/L
             </a>
           </li>
         </ul>

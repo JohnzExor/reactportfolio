@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body {
-}
-
 .nav-link {
     cursor: pointer;
 }
@@ -86,6 +82,10 @@ body {
 @media only screen and (max-width: 767px) {
     .panel {
         width: 100%;
+        height:50em;
+    }
+
+    .about-description {
         overflow-y: scroll;
         overflow-y: 30em;
         height:50em;
